@@ -1,0 +1,685 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>SConnect FAQ</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script src="jquery-1.7.2.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="sconnect_faq.css" />
+		<script src="sconnect_faq.js"></script>
+		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="sconnect_faq_ie.css" /><![endif]-->
+	</head>
+	<body>
+		<!--!! header !!-->
+		<div id="header">
+			<div id="headerLeft">
+				<img src="images/sconnect_fx.png" alt="SConnect" />
+				<ul id="header-tabs">
+					<li class="current-tab"><a href="index.htm">
+						<span>FAQ</span>
+					</a></li>
+					<!-- additional tabs here -->
+				</ul>
+			</div>
+		</div>
+		
+		<!--!! body-content !!-->
+		<div id="body-content" class="g-section g-tpl-240">
+			<!--@@ side-nav @@-->
+			<div id="side-nav" class="ui-resizable">
+				<div id="devdoc-nav">
+					<ul><li>
+						<span class="heading"><span>Frequently Asked Questions</span></span>
+						<ul><li class="toggle-list closed">
+							<div class="install"><a target="#install" class="click">
+								<span>How do I install / update SConnect?</span></a>
+								<a class="toggle-img click" title="show pages"></a>
+							</div>
+							<ul>
+								<li class="cr"><a target="#install-cr" class="click">Chrome</a></li>
+								<li class="ff"><a target="#install-ff" class="click">Firefox</a></li>
+								<li class="ie"><a target="#install-ie" class="click">Internet Explorer</a></li>
+								<li class="sf"><a target="#install-sf" class="click">Safari</a></li>
+								<li class="op"><a target="#install-op" class="click">Opera</a></li>
+							</ul>
+						</li></ul>
+						<ul><li class="toggle-list closed">
+							<div class="uninstall"><a target="#uninstall" class="click">
+								<span>How do I uninstall SConnect?</span></a>
+								<a class="toggle-img click" title="show pages"></a>
+							</div>
+							<ul>
+								<li class="cr"><a target="#uninstall-cr" class="click">Chrome</a></li>
+								<li class="ff"><a target="#uninstall-ff" class="click">Firefox</a></li>
+								<li class="ie"><a target="#uninstall-ie" class="click">Internet Explorer</a></li>
+								<li class="sf"><a target="#uninstall-sf" class="click">Safari</a></li>
+								<li class="op"><a target="#uninstall-op" class="click">Opera</a></li>
+							</ul>
+						</li></ul>
+						<ul><li class="toggle-list closed">
+							<div class="status"><a target="#status" class="click">
+								<span>How do I check SConnect Status?</span></a>
+								<a class="toggle-img click" title="show pages"></a>
+							</div>
+							<ul>
+								<li class="inactive"><a target="#status-inactive" class="click">Inactive</a></li>								
+								<li class="active"><a target="#status-active" class="click">Active</a></li>								
+								<li class="blocked"><a target="#status-blocked" class="click">Blocked</a></li>								
+							</ul>
+						</li></ul>
+						<ul><li class="toggle-list closed">
+							<div class="settings"><a target="#settings" class="click">
+								<span>How do I change SConnect Settings?</span></a>
+								<a class="toggle-img click" title="show pages"></a>
+							</div>
+							<ul>
+								<li class="addon"><a target="#settings-addon" class="click">AddOns</a></li>								
+								<li class="permission"><a target="#settings-permission" class="click">Permission</a></li>
+								<li class="about"><a target="#settings-about" class="click">About</a></li>								
+							</ul>
+						</li></ul>
+						<ul><li class="toggle-list closed">
+							<div class="dialogs"><a target="#dialogs" class="click">
+								<span>What does this dialog mean?</span></a>
+								<a class="toggle-img click" title="show pages"></a>
+							</div>
+							<ul>
+								<li class="timeout"><a target="#timeout" class="click">Timeout</a></li>
+								<li class="activex"><a target="#activex" class="click">ActiveX Filtering</a></li>
+							</ul>
+						</li></ul>
+						<ul><li class="compatibility"><a target="#compatibility" class="click">
+							<span>Which browsers and operating systems are supported by SConnect?</span></a>
+						</li></ul>
+					</li></ul>
+				</div>
+				<div id="nav-footer">
+					<div id="copyright">Copyright &copy; 2016 Gemalto</div>
+				</div>
+				<div class="ui-resizable-handle ui-resizable-e"></div>
+			</div>
+			
+			<!--@@ doc-content @@-->
+			<div id="doc-content" class="g-unit">
+				<!--## welcome ##-->
+				<div id="welcome">
+					<div class="jd-header guide-header">
+						<span class="crumb">&nbsp;</span>
+						<h1>Frequently Asked Questions (FAQ)</h1>
+					</div>
+					<div class="jd-content">
+						<div class="jd-descr">
+							<p>This page answers many of the frequently asked questions regarding SConnect.</p>
+						</div>
+					</div>
+				</div>
+				
+				<!--## install ##-->
+				<div id="install">
+					<div class="jd-header guide-header">
+						<span class="crumb">&nbsp;</span>
+						<h1>Installing / Updating SConnect</h1>
+					</div>
+					<div class="jd-content">
+						<div class="jd-descr">
+						
+							<p>This page describes how to install SConnect.</p>
+							
+							<!-- browser --><h2 id="install-cr">Chrome</h2>
+							
+							<h3>Step 1. Accept Terms and Conditions</h3>
+							<p>When accessing a page that uses SConnect and installation / update is required, you will be presented with Terms and Conditions dialog.</p>
+							<img src="images/install-eula.png" />
+							<div class="overlay"><div class="install-eula"></div></div>
+							<p>Click <b>Accept and Install</b> or <b>Accept and Update</b>.</p>
+
+							<h3>Step 2. Install Extension</h3>	
+							<p>After the Terms and Conditions are accepted, an installation guide dialog will appear in the middle of the page.</p>
+							<img src="images/install-cr-1.1.png" />
+							<div class="overlay"><div class="install-cr-1_1"></div></div>	
+							<p><b>Click</b> the first image displayed on the installation guide dialog.</p>
+							<p>Once clicked, a popup window will then appear and bring you to the SConnect Extension page in the Chrome Webstore.</p>
+
+							<img src="images/install-cr-1.2.png" />
+							<div class="overlay"><div class="install-cr-1_2"></div></div>
+							<p><b>Click</b> the button located on the top right side of the page to trigger the installation of SConnect Extension.</p>
+							<p>Once triggered, an extension installation confirmation dialog will then appear in the middle of the main page.</p>
+							
+							<div class="win-div">
+								<img src="images/install-cr-1.3.png" />
+								<div class="overlay"><div class="install-cr-4"></div></div>
+							</div>
+							<div class="osx-div">
+								<img src="images/install-cr-osx-1.3.png" />
+								<div class="overlay"><div class="install-cr-osx-4"></div></div>
+							</div>							
+							<p>Click <b>Add</b> to confirm the installation.</p>
+							
+							<h3>Step 3. Install Extension Host</h3>
+							<p>Once the Extension installation completed, a dialog will then appear at the bottom of the page informing you about the Extension Host download status.</p>
+							<div class="win-div">
+								<img src="images/install-cr-1.png" />
+							</div>
+							<div class="osx-div">
+								<img src="images/install-cr-osx-1.png" />
+							</div>
+							<p><b>Wait</b> until the download is completed and then <b>click</b> it to trigger the installation of SConnect Extension Host.</p>
+							<div class="win-div">
+								<p>Once triggered, a dialog will then appear in the middle of the page asking for your confirmation to run.</p>
+								<img src="images/install-cr-2.png" />
+								<div class="overlay"><div class="install-cr-2"></div></div>							
+								<div class="overlay"><div class="install-cr-2a"></div></div>							
+								<p><b>Verify</b> that the Extension is digitally signed by <b>Gemalto, Inc.</b>, then click <b>Run</b> to begin the installation.</p>
+							</div>
+							
+							<div class="osx-div">
+								<p>Once triggered, a dialog will then appear in the middle of the page that will guide you through the complete installation process.</p>
+								<img src="images/install-sf-2.png" />
+								<div class="overlay"><div class="install-sf-2"></div></div>
+								<div class="overlay"><div class="install-sf-2a"></div></div>
+								<p><b>Verify</b> that the Extension is digitally signed by <b>Gemalto, Inc.</b>, then <b>Continue</b> and complete the installation procedure.</p>
+							</div>
+							
+							<h3>Step 4. Installation Complete</h3>
+							<p>Upon the successful installation, the page will automatically reload and you can begin using SConnect.</p>
+							
+							<!-- browser --><h2 id="install-ff">Firefox</h2>
+							<h3>Step 1. Accept Terms and Conditions</h3>
+							<p>When accessing a page that uses SConnect and installation / update is required, you will be presented with Terms and Conditions dialog.</p>
+							<img src="images/install-eula.png" />
+							<div class="overlay"><div class="install-eula"></div></div>
+							<p>Click <b>Accept and Install</b> or <b>Accept and Update</b>.</p>
+							
+							<h3>Step 2. Download Extension</h3>
+							<p>After the Terms and Conditions are accepted, a dialog will appear at the top of the page asking you to confirm the Extension installation.</p>
+							<img src="images/install-ff-1.png" />
+							<div class="overlay"><div class="install-ff-1"></div></div>
+							<p>Click <b>Allow</b> and a dialog will then appear at the top of the page informing you about the Extension download status.</p>
+							<div class="ff39"> 
+							<img src="images/install-ff-2.png" />
+							</div>							
+							<div class="ff40"> 
+							<img src="images/install-ff40-2.png" />
+							</div>
+							<p><b>Wait</b> until the download is complete.
+							
+							<h3>Step 3. Install Extension</h3>
+							<div class="ff39"> 
+							<p>Once completed, a dialog will appear in the middle of the page asking for your confirmation to install the Extension.</p>
+							<img src="images/install-ff-3.png" />
+							<div class="overlay"><div class="install-ff-3"></div></div>
+							<div class="overlay"><div class="install-ff-3a"></div></div>
+							<p><b>Verify</b> that the Extension is digitally signed by <b>Gemalto, Inc.</b>, then click <b>Install Now</b> to proceed with the installation.</p>
+							</div>							
+							<div class="ff40">
+							<p>Once completed, a dialog will appear at the top of the page asking for your confirmation to install the Extension.</p>
+							<img src="images/install-ff40-3.png" />
+							<div class="overlay"><div class="install-ff40-3"></div></div>							
+							</div>
+							
+							<h3>Step 4. Installation Complete</h3>
+							<p>Wait until the Extension installation is complete. Once completed, a dialog will appear at the top of the page informing you about the installation status.</p>
+							<img src="images/install-ff-4.png" />
+							<p>Upon the successful installation, the page will automatically reload and you can begin using SConnect.</p>
+							
+							<!-- browser --><h2 id="install-ie">Internet Explorer</h2>
+							<h3>Step 1. Accept Terms and Conditions</h3>
+							<p>When accessing a page that uses SConnect and installation / update is required, you will be presented with Terms and Conditions dialog.</p>
+							<img src="images/install-eula.png" />
+							<div class="overlay"><div class="install-eula"></div></div>
+							<p>Click <b>Accept and Install</b> or <b>Accept and Update</b>.</p>
+							
+							<h3>Step 2. Download and Install Extension</h3>
+							<p>After the Terms and Conditions are accepted, a dialog will appear at the bottom of the page asking you to confirm the Extension installation.</p>
+							<img src="images/install-ie-1.png" />
+							<div class="overlay"><div class="install-ie-1"></div></div>
+							<p>Click <b>Run</b> to proceed with the Extension download and installation.</p>
+							
+							<h3>Step 3. Installation Complete</h3>
+							<h4>New Installation</h4>
+							<p>Upon a successful installation, the page will automatically reload and you can begin using SConnect.</p>
+							<p class="note"><b>Note:</b> SConnect Settings toolbar and menu item will only be available after the browser restart.</p>
+							<h4>Update</h4>
+							<p>Upon a successful update, a dialog will appear at the top of the page asking you to restart Internet Explorer.</p>
+							<img src="images/install-ie-2.png" />
+							<p><b>Restart</b> Internet Explorer to complete the procedure. Upon restart, you can begin using SConnect.</p>
+							
+							<!-- browser --><h2 id="install-sf">Safari</h2>
+							<h3>Step 1. Accept Terms and Conditions</h3>
+							<p>When accessing a page that uses SConnect and installation / update is required, you will be presented with Terms and Conditions dialog.</p>
+							<img src="images/install-eula.png" />
+							<div class="overlay"><div class="install-eula"></div></div>
+							<p>Click <b>Accept and Install</b> or <b>Accept and Update</b>.</p>
+							
+							<h3>Step 2. Download Extension</h3>
+							<p>After the Terms and Conditions are accepted, the Extension will start being downloaded immediately.</p>
+							<img src="images/install-sf-1.png" />
+							<p><b>Wait</b> until the download is complete. Once completed, <b>double-click</b> it to trigger the installation.</p>
+							
+							<h3>Step 3. Install Extension</h3>
+							<p>Once triggered, a dialog will appear in the middle of the page that will guide you through the complete installation process.</p>
+							<img src="images/install-sf-2.png" />
+							<div class="overlay"><div class="install-sf-2"></div></div>
+							<div class="overlay"><div class="install-sf-2a"></div></div>
+							<p><b>Verify</b> that the Extension is digitally signed by <b>Gemalto, Inc.</b>, then click <b>Continue</b> and complete the installation procedure.</p>
+							
+							<p><b>Wait</b> until another dialog appeared in the middle of the page asking for your confirmation to install the Extension into Safari.</p>
+							<img class='sf8' src="images/install-sf-4.png" />
+							<img class='sf9' src="images/install-sf-4a.png" />
+							<div class="overlay">
+								<div class="sf8 install-sf-4"></div>
+								<div class="sf9 install-sf-4a"></div>
+							</div>
+							<p>Click <b><span class='sf8'>Install</span><span class='sf9'>Trust</span></b> to confirm, then wait for the remaining installation procedure to complete.</p>
+							
+							<h3>Step 4. Installation Complete</h3>	
+							<p>Once completed, the page will automatically reload and then you can begin using SConnect.</p>
+							
+							<!-- browser --><h2 id="install-op">Opera</h2>
+							
+							<h3>Step 1. Accept Terms and Conditions</h3>
+							<p>When accessing a page that uses SConnect and installation / update is required, you will be presented with Terms and Conditions dialog.</p>
+							<img src="images/install-eula.png" />
+							<div class="overlay"><div class="install-eula"></div></div>
+							<p>Click <b>Accept and Install</b> or <b>Accept and Update</b>.</p>
+
+							<h3>Step 2. Install Extension</h3>	
+							<p>After the Terms and Conditions are accepted, an installation guide dialog will appear in the middle of the page.</p>
+							<img src="images/install-op-1.1.png" />
+							<div class="overlay"><div class="install-cr-1_1"></div></div>	
+							<p><b>Click</b> the first image displayed on the installation guide dialog.</p>
+							<p>Once clicked, a popup window will then appear and bring you to the SConnect Extension page in the Opera Webstore.</p>
+
+							<img src="images/install-op-1.2.png" />
+							<div class="overlay"><div class="install-op-1_2"></div></div>
+							<p><b>Click</b> the button located on the top right side of the page to trigger the installation of SConnect Extension.</p>							
+							
+							<h3>Step 3. Install Extension Host</h3>
+							<p>Once the Extension installation completed, a dialog will then appear at the top of the page informing you about the Extension Host download status.</p>							
+							<div class="win-div">
+								<img src="images/install-op-1.png" />														
+							</div>
+							<div class="osx-div">
+								<img src="images/install-op-osx-1.png" />														
+							</div>
+							<p><b>Wait</b> until the download is complete. Once completed, <b>double-click</b> it to trigger the installation of SConnect Extension Host.</p>							
+							<div class="win-div">
+								<p>Once triggered, a dialog will then appear in the middle of the page asking for your confirmation to run.</p>
+								<img src="images/install-cr-2.png" />
+								<div class="overlay"><div class="install-cr-2"></div></div>							
+								<div class="overlay"><div class="install-cr-2a"></div></div>							
+								<p><b>Verify</b> that the Extension is digitally signed by <b>Gemalto, Inc.</b>, then click <b>Run</b> to begin the installation.</p>
+							</div>
+							<div class="osx-div">
+								<p>Once triggered, a dialog will then appear in the middle of the page that will guide you through the complete installation process.</p>
+								<img src="images/install-sf-2.png" />
+								<div class="overlay"><div class="install-sf-2"></div></div>
+								<div class="overlay"><div class="install-sf-2a"></div></div>
+								<p><b>Verify</b> that the Extension is digitally signed by <b>Gemalto, Inc.</b>, then <b>Continue</b> and complete the installation procedure.</p>
+							</div>
+							
+							<h3>Step 4. Installation Complete</h3>
+							<p>Upon the successful installation, the page will automatically reload and you can begin using SConnect.</p>
+						</div>
+						<a class="click top">^ Go to top</a>
+					</div>
+					<div class="footer"></div>
+				</div><!-- end install -->
+				
+				<!--## uninstall ##-->
+				<div id="uninstall">
+					<div class="jd-header guide-header">
+						<span class="crumb">&nbsp;</span>
+						<h1>Uninstalling SConnect</h1>
+					</div>
+					<div class="jd-content">
+						<div class="jd-descr">
+							<p>This page describes how to uninstall SConnect.</p>
+							
+							<!-- browser --><h2 id="uninstall-cr">Chrome</h2>
+							
+							<h3>Step 1. Extension Removal</h3>
+							
+							<h4>1.1. Navigate to Extensions Manager</h4>
+							<p>Open the <b>Extensions Manager</b> page by navigating to the <b>Settings</b> > <b>Tools</b> > <b>Extensions</b>.</p>
+							<img src="images/uninstall-cr-1.png" />
+							
+							<h4>1.2. Remove Extension</h4>
+							<p>Find the <b>SConnect</b> extension, then click the <b>trash can</b> icon.</p>
+							<div class="shadow"></div>
+							<img src="images/uninstall-cr-2.png" />
+							<div class="overlay"><div class="uninstall-cr-2"></div></div>
+							
+							<h4>1.3. Confirm Removal</h4>
+							<p>Confirm that you want to remove the extension by clicking <b>Remove</b>.</p>
+							<img src="images/uninstall-cr-3.png" />
+							<div class="overlay"><div class="uninstall-cr-3"></div></div>
+							<p>Once the removal is complete, the SConnect extension will no longer be in the list.</p>
+
+							<h3>Step 2. Extension Host Removal</h3>
+							
+							<div class="win-div">
+								<h4>2.1. Navigate to Programs and Features</h4>
+								<p>Open <b>Programs and Features</b> page by navigating to the <b>Windows Control Panel</b> > <b>Programs</b> > <b>Uninstall a program</b>.</p>
+								<img src="images/windows-control-panel.png" />
+								
+								<h4>2.2. Remove Extension Host</h4>
+								<p>Find and select the <b>SConnect Chrome</b>, then click <b>Uninstall</b>.</p>
+								<img src="images/uninstall-cr-4.png" />
+								<div class="overlay"><div class="uninstall-cr-4"></div></div>
+								<p>Once the removal is complete, the SConnect extension host will no longer be in the list.</p>
+							</div>
+							
+							<div class="osx-div">																					
+								<h4>2.1. Navigate to Uninstall Application</h3>
+								
+								<p>Find the <b>uninstall</b> application under <b>Home</b> > <b>Library</b> > <b>Application Support</b> > <b>SConnect</b>.</p>
+								<img src="images/uninstall-sf-1.png" />
+								<p>Double-click on the <b>uninstall</b> application to execute.														
+								
+								<h4>2.2. Removal Complete</h3>
+								<p>Once the removal is complete, close the uninstall application by clicking <b>Quit</b>.</p>
+								<img src="images/uninstall-sf-2.png" />
+								<div class="overlay"><div class="uninstall-sf-2"></div></div>
+							</div>
+							
+							<!-- browser --><h2 id="uninstall-ff">Firefox</h2>
+							<h3>Step 1. Navigate to Add-ons Manager</h3>
+							<p>Open the <b>Add-ons Manager</b> page by navigating to the <b>Settings</b> > <b>Add-ons</b>.</p>
+							<img class="no-margin-img" src="images/uninstall-ff-1.png" />
+							
+							<h3>Step 2. Remove Extension</h3>
+							<p>Find the <b>SConnect</b> extension, then click <b>Remove</b>.</p>
+							<img src="images/uninstall-ff-2.png" />
+							<div class="overlay"><div class="uninstall-ff-2"></div></div>														
+							<p>Once the removal is complete, the SConnect extension will no longer be in the list.</p>
+							
+							<!-- browser --><h2 id="uninstall-ie">Internet Explorer</h2>
+							<h3>Step 1. Navigate to Programs and Features</h3>
+							<p>Open <b>Programs and Features</b> page by navigating to the <b>Windows Control Panel</b> > <b>Programs</b> > <b>Uninstall a program</b>.</p>
+							<img src="images/windows-control-panel.png" />
+							
+							<h3>Step 2. Remove Extension</h3>
+							<p>Find and select the <b>SConnect IE</b> extension, then click <b>Uninstall</b>.</p>
+							<img src="images/uninstall-ie-1.png" />
+							<div class="overlay"><div class="uninstall-ie-1"></div></div>
+							<p>Once the removal is complete, the SConnect IE extension will no longer be in the list.</p>
+							
+							<!-- browser --><h2 id="uninstall-sf">Safari</h2>
+
+							<h3>Step 1. Navigate to Uninstall Application</h3>
+							
+							<p>Find the <b>uninstall</b> application under <b>Home</b> > <b>Library</b> > <b>Application Support</b> > <b>SConnect</b>.</p>
+							<img src="images/uninstall-sf-1.png" />
+							<p>Double-click on the <b>uninstall</b> application to execute.														
+							
+							<h3>Step 2. Removal Complete</h3>
+							<p>Once the removal is complete, close the uninstall application by clicking <b>Quit</b>.</p>
+							<img src="images/uninstall-sf-2.png" />
+							<div class="overlay"><div class="uninstall-sf-2"></div></div>
+							
+							<h3>Step 3. Restart Safari</h3>
+							<p>SConnect removal will be effective only after a Safari <b>restart</b>.</p>
+							
+							<!-- browser --><h2 id="uninstall-op">Opera</h2>
+							
+							<h3>Step 1. Extension Removal</h3>
+							
+							<h4>1.1. Navigate to Extensions Manager</h4>
+							<div class="win-div">
+								<p>Open the <b>Extensions Manager</b> page by navigating to the <b>Opera</b> > <b>Extensions</b>.</p>
+								<img src="images/uninstall-op-1.png" />
+							</div>
+							
+							<div class="osx-div">
+								<p>Open the <b>Extensions Manager</b> page by navigating to the <b>View</b> > <b>Show Extensions</b>.</p>
+								<img src="images/uninstall-op-osx-1.png" />
+							</div>
+							
+							<h4>1.2. Remove Extension</h4>
+							<p>Find the <b>SConnect</b> extension, then click the <b>remove</b> icon.</p>
+							<div class="shadow"></div>
+							<img src="images/uninstall-op-2.png" />
+							<div class="overlay"><div class="uninstall-op-2"></div></div>
+							
+							<h4>1.3. Confirm Removal</h4>
+							<p>Confirm that you want to remove the extension by clicking <b>OK</b>.</p>
+							<div class="win-div">
+								<img src="images/uninstall-op-3.png" />
+								<div class="overlay"><div class="uninstall-op-3"></div></div>
+							</div>
+							<div class="osx-div">
+								<img src="images/uninstall-op-osx-3.png" />
+								<div class="overlay"><div class="uninstall-op-osx-3"></div></div>
+							</div>
+							<p>Once the removal is complete, the SConnect extension will no longer be in the list.</p>
+
+							<h3>Step 2. Extension Host Removal</h3>
+							
+							<div class="win-div">
+								<h4>2.1. Navigate to Programs and Features</h4>
+								<p>Open <b>Programs and Features</b> page by navigating to the <b>Windows Control Panel</b> > <b>Programs</b> > <b>Uninstall a program</b>.</p>
+								<img src="images/windows-control-panel.png" />
+								
+								<h4>2.2. Remove Extension Host</h4>
+								<p>Find and select the <b>SConnect Host</b>, then click <b>Uninstall</b>.</p>
+								<img src="images/uninstall-cr-4.png" />
+								<div class="overlay"><div class="uninstall-cr-4"></div></div>
+								<p>Once the removal is complete, the SConnect Host will no longer be in the list.</p>
+							</div>
+							
+							<div class="osx-div">																					
+								<h4>2.1. Navigate to Uninstall Application</h3>
+								
+								<p>Find the <b>uninstall</b> application under <b>Home</b> > <b>Library</b> > <b>Application Support</b> > <b>SConnect</b>.</p>
+								<img src="images/uninstall-sf-1.png" />
+								<p>Double-click on the <b>uninstall</b> application to execute.														
+								
+								<h4>2.2. Removal Complete</h3>
+								<p>Once the removal is complete, close the uninstall application by clicking <b>Quit</b>.</p>
+								<img src="images/uninstall-sf-2.png" />
+								<div class="overlay"><div class="uninstall-sf-2"></div></div>
+							</div>
+							
+						</div>
+						<a class="click top">^ Go to top</a>
+					</div>
+					<div class="footer"></div>
+				</div><!-- end uninstall -->			
+				
+				<!--## status ##-->
+				<div id="status">
+					<div class="jd-header guide-header">
+						<span class="crumb">&nbsp;</span>
+						<h1>SConnect Status</h1>
+					</div>
+					<div class="jd-content">
+						<div class="jd-descr">
+							
+							<p>This page describes the content of SConnect Status page.</p>
+							
+							<h2 id="status-inactive">Inactive</h2>																				
+							
+							<p>The <b>inactive</b> state indicates that the site currently displayed in the browser's active tab is not accessing SConnect extension.</p>
+							<img src="images/status-inactive.png" />
+
+							<p><b>Note.</b></p>
+							<ul>
+								<li><b>Status:</b> status text and indicator</li>
+								<li><b>Domain:</b> URL of the site accessing SConnect</li>
+								<li><b>AddOns:</b> list of add-ons being accessed by the site</li>
+							</ul>
+							
+							<h2 id="status-active">Active</h2>																				
+							
+							<p>The <b>active</b> state indicates that the site currently displayed in the browser's active tab is accessing SConnect extension.</p>
+							<img src="images/status-active.png" />
+							<p><b>Note.</b></p>
+							<ul>
+								<li><b>BLOCK ACCESS:</b> to disallow current site to further accessing SConnect</li>
+							</ul>
+							
+							<h2 id="status-blocked">Blocked</h2>																				
+							
+							<p>The <b>blocked</b> state indicates that the site currently displayed in the browser's active tab is trying to access SConnect extension, but being blocked by user.</p>
+							<img src="images/status-blocked.png" />
+							<p><b>Note.</b></p>
+							<ul>
+								<li><b>ALLOW ACCESS:</b> to allow current site to access SConnect</li>
+							</ul>
+							
+							<br/>
+							<p><b>See also:</b> <a target="#settings-permission" class="click">SConnect Settings</a></p>
+							
+						</div>
+						<a class="click top">^ Go to top</a>
+					</div>
+					<div class="footer"></div>
+				</div><!-- end status -->
+
+				<!--## settings ##-->
+				<div id="settings">
+					<div class="jd-header guide-header">
+						<span class="crumb">&nbsp;</span>
+						<h1>SConnect Settings</h1>
+					</div>
+					<div class="jd-content">
+						<div class="jd-descr">
+						
+							<p>This page describes the content of SConnect Settings page.</p>
+							
+							<!-- AddOns Tab -->
+							<h2 id="settings-addon">AddOns</h2>
+							<p>This page displays the list of add-ons installed on the system.</p>
+							<div class="shadow"></div>
+							<img src="images/settings-addons-1.png" />		
+
+							<br/><br/>
+							<p>To display detailed info about the addon, click on the <b>info icon</b>.</p>
+							<div class="shadow"></div>
+							<img src="images/settings-addons-2.png" />
+							<div class="overlay"><div class="settings-addons-2"></div></div>		
+							
+							<br/>
+							<p>To remove the addon from the system, click on the <b>trash icon</b> and confirm.</p>
+							<div class="shadow"></div>
+							<img src="images/settings-addons-3.png" />
+							<div class="overlay"><div class="settings-addons-3"></div></div>		
+							<div class="overlay"><div class="settings-addons-3a"></div></div>	
+							
+							<!-- Permission Tab -->
+							<h2 id="settings-permission">Permission</h2>
+							<p>This page displays permission settings and list of allowed or blocked sites.</p>							
+							<div class="shadow"></div>
+							<img src="images/settings-perm-1.png" />													
+							<br/><br/>
+							
+							<p>To <b>disallow</b> access to SConnect from all sites by <b>default</b>, check the option. Otherwise, leave it unchecked.</p>
+							<div class="shadow"></div>
+							<img src="images/settings-perm-2.png" />
+							<div class="overlay"><div class="settings-perm-2"></div></div>	
+							<br/>
+							
+							<p>To <b>remove</b> site from the list of blocked or allowed sites, click on the remove icon and confirm.</p>
+							<div class="shadow"></div>
+							<img src="images/settings-perm-3.png" />
+							<div class="overlay"><div class="settings-perm-3"></div></div>							
+							
+							<br/>
+							<p><b>See also:</b> <a target="#status" class="click">SConnect Status</a></p>
+							
+							<!--About Tab -->
+							<h2 id="settings-about">About</h2>
+							<p>This page displays the current version of the SConnect.</p>
+							<div class="shadow"></div>
+							<img src="images/settings-about.png" />		
+						</div>
+						<a class="click top">^ Go to top</a>
+					</div>
+					<div class="footer"></div>
+				</div><!-- end settings -->
+				
+				<!--## dialogs ##-->
+				<div id="dialogs">
+					<div class="jd-header guide-header">
+						<span class="crumb">&nbsp;</span>
+						<h1>Dialogs</h1>
+					</div>
+					<div class="jd-content">
+						<div class="jd-descr">
+							<p>Please select a dialog you would like more information on.</p>
+							<ul>
+								<li><a target="#timeout" class="click">Timeout</a></li>
+								<li><a target="#activex" class="click">ActiveX Filtering</a></li>
+							</ul>
+						</div>
+						<a class="click top">^ Go to top</a>
+					</div>
+					<div class="footer"></div>
+				</div>
+				
+				<!--## timeout ##-->
+				<div id="timeout">
+					<div class="jd-header guide-header">
+						<span class="crumb">&nbsp;</span>
+						<h1>Timeout</h1>
+					</div>
+					<div class="jd-content">
+						<div class="jd-descr">
+							<p>This is the timeout dialog. It occurs when the installation procedure is not completed within the specified timeframe.</p>
+							<img src="images/dialog-timeout.png" />
+							
+							<p>Please reload the page to begin the installation again. For instructions, check the <a target="#install" class="click">install page</a>.</p>
+						</div>
+						<a class="click top">^ Go to top</a>
+					</div>
+					<div class="footer"></div>
+				</div>
+				
+				<!--## activex ##-->
+				<div id="activex">
+					<div class="jd-header guide-header">
+						<span class="crumb">&nbsp;</span>
+						<h1>ActiveX Filtering</h1>
+					</div>
+					<div class="jd-content">
+						<div class="jd-descr">
+							<p>This is the ActiveX Filtering dialog.</p>
+							<img src="images/dialog-activex-1.png" />
+							
+							<p>This occurs when ActiveX Filtering is enabled in Internet Explorer. This will prevent the SConnect extension from working.</p>
+							<p>To disable this feature, perform the following steps:</p>
+							<h4>No Menu Bar</h4>
+							<p>If the Menu bar is not present, enable it by <b>right-clicking</b> above the address bar and clicking <b>Menu bar</b>.</p>
+							<img src="images/dialog-activex-2.png" />
+							
+							<h4>Menu Bar</h4>
+							<p>If the Menu Bar is present, click <b>Tools</b>, then <b>uncheck ActiveX Filtering</b> to disable the feature.</p>
+							<img src="images/dialog-activex-3.png" />
+							<p><b>Reload the page</b> to begin using SConnect.</p>
+						</div>
+						<a class="click top">^ Go to top</a>
+					</div>
+					<div class="footer"></div>
+				</div>
+			
+				<!--## compatibility ##-->
+				<div id="compatibility">
+					<div class="jd-header guide-header">
+						<span class="crumb">&nbsp;</span>
+						<h1>Compatibility</h1>
+					</div>
+					<div class="jd-content">
+						<div class="jd-descr">
+							<p>This page describes the browsers and operating systems that are supported by SConnect.</p>
+							<img src="images/compatibility-matrix.png" />							
+						</div>
+						<a class="click top">^ Go to top</a>
+					</div>
+					<div class="footer"></div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

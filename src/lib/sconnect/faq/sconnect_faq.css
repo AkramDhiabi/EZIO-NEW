@@ -1,0 +1,1079 @@
+/* ===== SConnect ===== */
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.click { cursor: pointer; }
+.click:hover { text-decoration: underline; }
+
+.current { text-decoration: underline; }
+.note { margin-bottom: 0; }
+.shadow {
+	box-shadow: 0 5px 10px #888;
+	left: 1em;
+	position: absolute;
+}
+.top { float: right; }
+
+/* Overlays and Outlines */
+
+.overlay {
+	position: relative;
+}
+
+.overlay>div {
+	border: 2px solid #f00;
+	border-radius: 5px;
+	margin: 0 0 1em 1em;
+	position: absolute;
+}
+.overlay>img { position: absolute; }
+
+.check	{ background: url('images/check.png') no-repeat center center; }
+
+.overlay>.install-eula			{ bottom: 17px;		height: 44px;	left: 374px;	width: 147px; }
+.overlay>.install-cr-1_1		{ bottom: 40px;		height: 86px;	left: 32px;		width: 110px; }
+.overlay>.install-cr-1_2		{ bottom: 45px;		height: 36px;	left: 558px;	width: 196px; }
+.overlay>.install-cr-2			{ bottom: 199px;	height: 17px;	left: 125px;	width: 74px; }
+.overlay>.install-cr-2a			{ bottom: 118px;	height: 26px;	left: 221px;	width: 80px; }
+.overlay>.install-cr-4			{ bottom: 13px;		height: 32px;	left: 197px;	width: 75px; }
+.overlay>.install-cr-osx-4		{ bottom: 16px;		height: 31px;	left: 373px;	width: 76px; }
+.overlay>.install-op-1_2		{ bottom: 41px;		height: 44px;	left: 596px;	width: 170px; }
+.overlay>.install-ff-1			{ bottom: 6px;		height: 32px;	left: 250px;	width: 103px; }
+.overlay>.install-ff-3			{ bottom: 18px;		height: 31px;	left: 370px;	width: 77px; }
+.overlay>.install-ff40-3		{ bottom: 10px;		height: 29px;	left: 305px;	width: 78px; }
+.overlay>.install-ff-3a			{ bottom: 212px;	height: 16px;	left: 134px;	width: 75px; }
+.overlay>.install-ie-1			{ bottom: 6px;		height: 29px;	left: 485px;	width: 63px; }
+.overlay>.install-sf-2			{ bottom: 13px;		height: 25px;	left: 510px;	width: 92px; }
+.overlay>.install-sf-2a			{ bottom: 420px;	height: 16px;	left: 597px;	width: 19px; }
+.overlay>.install-sf-4			{ bottom: 16px;		height: 25px;	left: 318px;	width: 83px; }
+.overlay>.install-sf-4a			{ bottom: 16px;		height: 23px;	left: 318px;	width: 81px; }
+.overlay>.uninstall-cr-2		{ bottom: 66px;		height: 21px;	left: 703px;	width: 21px; }
+.overlay>.uninstall-cr-3		{ bottom: 19px;		height: 31px;	left: 150px;	width: 75px; }
+.overlay>.uninstall-cr-4		{ bottom: 197px;	height: 28px;	left: 289px;	width: 69px; }
+.overlay>.uninstall-op-2		{ bottom: 167px;	height: 21px;	left: 578px;	width: 21px; }
+.overlay>.uninstall-op-3		{ bottom: 12px;		height: 26px;	left: 318px;	width: 76px; }
+.overlay>.uninstall-op-osx-3	{ bottom: 10px;		height: 35px;	left: 427px;	width: 49px; }
+.overlay>.uninstall-ff-2		{ bottom: 238px;	height: 26px;	left: 481px;	width: 80px; }
+.overlay>.uninstall-ie-1		{ bottom: 197px;	height: 28px;	left: 289px;	width: 69px; }
+.overlay>.uninstall-sf-2		{ bottom: 25px;		height: 25px;	left: 337px;	width: 78px; }
+.overlay>.settings-addons-2		{ bottom: 132px;	height: 19px;	left: 435px;	width: 20px; }
+.overlay>.settings-addons-3		{ bottom: 28px;		height: 19px;	left: 466px;	width: 19px; }
+.overlay>.settings-addons-3a	{ bottom: 29px;		height: 17px;	left: 570px;	width: 26px; }
+.overlay>.settings-perm-2  		{ bottom: 106px;	height: 18px;	left: 49px;		width: 18px; }
+.overlay>.settings-perm-3		{ bottom: 15px;		height: 17px;	left: 544px;	width: 26px; }
+
+/* ===== DOCS ===== */
+
+#title {
+	border-bottom: 4px solid #ccc;
+	display:none;
+}
+
+#title h1 {
+	color:#336666;
+	margin:0;
+	padding: 5px 10px;
+	font-size: 1em;
+	line-height: 15px;
+}
+
+#title h1 .small{
+	color:#000;
+	margin:0;
+	font-size: 13px;
+	padding:0 0 0 15px;
+}
+
+/* SIDE NAVIGATION */
+
+#side-nav {
+	background-color: #fff;
+	font-size: 12px;
+	left: 0;
+	padding: 0 3px 0 0;
+	position: absolute;
+}
+
+#resize-packages-nav {
+/* keeps the resize handle below the h-scroll handle */
+	height:270px;
+	overflow:hidden;
+	max-height:100%;
+}
+
+#packages-nav {
+	height:270px;
+	max-height:inherit;
+	position:relative;
+	overflow:auto;
+}
+
+#classes-nav, #devdoc-nav {
+	overflow:auto;
+	position:relative;
+}
+
+#side-nav ul {
+	list-style: none;
+	margin: 0;
+	padding:5px 0;
+}
+
+#side-nav ul ul {
+	margin: .5em 0 0 0;
+	padding: 0;
+}
+
+#side-nav li {
+	padding:0;
+	padding:1px 0 1px 0;
+	zoom:1;
+}
+
+#side-nav li span.heading, #side-nav li h2 {
+	display:block;
+	font-size:12px;
+	font-weight: bold;
+	margin:.5em 0 0 0;
+	padding: 3px 0 1px 9px;
+}
+
+#side-nav li a {
+	display: inline-block; /* needed to apply padding to line-wraps */
+	text-decoration:none;
+	padding: 0 0 0 18px;
+	zoom:1;
+}
+
+#side-nav li a span+span {
+	display:none;
+}
+
+#side-nav li a:hover {
+	text-decoration:underline;
+}
+
+#side-nav li a+a {
+	padding: 0;
+}
+/*second level (nested) list*/
+#side-nav li li li a {
+	padding: 0 0 0 28px;
+}
+/*third level (nested) list*/
+#side-nav li li li li a {
+	padding: 0 0 0 38px;
+}
+
+#side-nav .selected {
+	background-color: #435a6e;
+	color: #fff;
+	font-weight:bold;
+}
+
+#side-nav .selected a {
+	color: #fff;
+	text-decoration:none;
+}
+
+#side-nav strong {
+	display:block;
+}
+
+#side-nav .toggle-list .toggle-img {
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:0;
+	left:0;
+	height:16px;
+	width:15px;
+	outline-style:none;
+}
+
+#side-nav .closed .toggle-img, #side-nav .open .closed .toggle-img {
+	background:url('images/triangle-closed-small.png') 7px 4px no-repeat;
+}
+#side-nav .open .toggle-img {
+	background:url('images/triangle-opened-small.png') 7px 4px no-repeat;
+}
+
+#side-nav .toggle-list {
+	position:relative;
+}
+
+#side-nav .toggle-list ul {
+	margin:0;
+	display:none;
+}
+
+#side-nav .toggle-list div {
+	display:block;
+}
+
+#index-links .selected {
+	background-color: #fff;
+	color: #000;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+#index-links {
+	padding:7px 0 4px 10px;
+}
+
+/* nav tree */
+
+#nav-tree ul {
+	padding:5px 0 1.5em;
+}
+
+#side-nav #nav-tree ul li a, #side-nav #nav-tree ul li span.no-children {
+	padding: 0 0 0 0;
+	margin: 0;
+}
+
+#nav-tree .plus {
+	margin: 0 3px 0 0;
+}
+
+#nav-tree ul ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+#nav-tree ul li {
+	margin: 0;
+	padding: 0 0 0 0;
+	white-space: nowrap;
+}
+
+#nav-tree .children_ul {
+	margin:0;
+}
+
+#nav-tree a.nolink {
+	color: black;
+	text-decoration: none;
+}
+
+#nav-tree span.label {
+	width: 100%;
+}
+
+#nav-tree {
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+
+#nav-swap {
+	font-size:10px;
+	line-height:10px;
+	margin-left:1em;
+	text-decoration:none;
+	display:block;
+}
+
+#tree-link {}
+
+#nav-footer {
+	bottom: 10px;
+	color: #aaa;
+	float: left;
+	font-size: 11px;
+	left: 10px;
+	position: absolute;
+}
+
+/* DOCUMENT BODY */
+
+#doc-content {
+	overflow:auto;
+	position:relative;
+}
+
+.jd-header {
+	background-color: #E2E2E2;
+	padding: 7px 15px;
+}
+
+.jd-header h1 {
+	margin: 0 0 10px;
+	font-size:1.7em;
+}
+
+.jd-header .crumb {
+	font-size:.9em;
+	line-height:1em;
+	color:#777;
+}
+
+.jd-header .crumb a, .jd-header .crumb a:visited {
+	text-decoration:none;
+	color:#777;
+}
+
+.jd-header .crumb a:hover {
+	text-decoration:underline;
+}
+
+.jd-header table {
+	margin:0;
+	padding:0;
+}
+
+.jd-header td {
+	border:none;
+	padding:0;
+	vertical-align:top;
+}
+
+.jd-header.guide-header {
+	background-color:#fff;
+	color:#435a6e;
+	height:50px;
+}
+
+.jd-descr {
+	position:relative;
+}
+
+/* summary tables for reference pages */
+.jd-sumtable {
+	margin: .5em 1em 1em 1em;
+	width:95%; /* consistent table widths; within IE's quirks */
+	font-size:.9em;
+}
+
+.jd-sumtable a {
+	text-decoration:none;
+}
+
+.jd-sumtable a:hover {
+	text-decoration:underline;
+}
+
+/* the link inside a sumtable for "Show All/Hide All" */
+.toggle-all {
+	display:block;
+	float:right;
+	font-weight:normal;
+	font-size:0.9em;
+}
+
+/* adjustments for in/direct subclasses tables */
+.jd-sumtable-subclasses {
+	margin: 1em 0 0 0;
+	max-width:968px;
+}
+
+/* extra space between end of method name and open-paren */
+.sympad {
+	margin-right: 2px;
+}
+
+/* right alignment for the return type in sumtable */
+.jd-sumtable .jd-typecol {
+	text-align:right;
+}
+
+/* adjustments for the expando table-in-table */
+.jd-sumtable-expando {
+	margin:.5em 0;
+	padding:0;
+}
+
+/* a div that holds a short description */
+.jd-descrdiv {
+	padding:3px 1em 0 1em;
+	margin:0;
+	border:0;
+}
+
+/* page-top-right container for reference pages (holds links to summary tables) */
+
+/* IE6 quirk (won't chain classes, so just keep background blue) */
+* html #side-nav li.selected, * html #side-nav li.selected *, * html #side-nav div.label.selected, * html #side-nav div.label.selected * {
+	background-color: #435a6e !important;
+}
+
+/* inheritance table */
+.jd-inheritance-table {
+	border-spacing:0;
+	margin:0;
+	padding:0;
+	font-size:.9em;
+}
+.jd-inheritance-table td {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.jd-inheritance-table .jd-inheritance-space {
+	font-weight:bold;
+	width:1em;
+}
+.jd-inheritance-table .jd-inheritance-interface-cell {
+	padding-left: 17px;
+}
+
+.jd-content {
+	padding: 18px 30px;
+}
+
+hr {
+	background-color:#ccc;
+	border-color:#fff;
+	margin:2em 0 1em;
+}
+
+/* DOC CLASSES */
+
+.jd-content h1 {
+/*sdk page*/
+	font-size:1.6em;
+	color:#336666;
+	margin:0 0 .5em;
+}
+
+.jd-content h2 {
+	font-size:1.45em;
+	color:#111;
+	border-top:2px solid #ccc;
+	padding: .5em 0 0;
+	margin: 2em 0 1em 0;
+}
+
+.jd-content h3 {
+	font-size:1.3em;
+	color:#3a3a3a;
+	padding: 0;
+	margin: 2em 0 1em 0;
+}
+
+.jd-content h4 {
+	font-size:1.1em;
+	color:#3a3a3a;
+	padding: 0;
+	margin: 1.25em 0 1.25em 0;
+}
+
+.jd-content h5 {
+	font-size:1.0em;
+	color:#3a3a3a;
+	padding: 0;
+	margin: 1em 0 .65em 0;
+}
+
+.jd-content .small-header {
+	font-size:1em;
+	color:#000;
+	font-weight:bold;
+	border:none;
+	padding:0;
+	margin:1em 0 .5em;
+	position:inherit;
+}
+
+.jd-content table {
+	margin: 0 0 1em 1em;
+}
+
+.jd-content img {
+	margin: 0 0 1em 1em;
+}
+
+.jd-content li img, .jd-content dd img {
+	margin:.5em 0 .5em 1em;
+}
+
+.nolist {
+	list-style:none;
+	padding:0;
+	margin:0 0 1em 1em;
+}
+
+.nolist li {
+	padding:0 0 2px;
+	margin:0;
+}
+
+h4 .normal {
+	font-size:.9em;
+	font-weight:normal;
+}
+
+.caps {
+	font-variant:small-caps;
+	font-size:1.2em;
+}
+
+dl.tag-list dl.atn-list {
+	padding:0 0 0 2em;
+}
+
+.jd-details {
+/*	border:1px solid #669999;
+	padding:4px; */
+	margin:0 0 1em;
+}
+
+/* API reference: a container for the .tagdata blocks that make up the detailed description */
+.jd-details-descr {
+	padding:0;
+	margin:.5em .25em;
+}
+
+/* API reference: a block containing a detailed description, a params table, seealso list, etc */
+.jd-tagdata {
+	margin:.5em 1em;
+}
+
+.jd-tagdata p {
+	margin:0 0 1em 1em;
+}
+
+/* API reference: adjustments to the detailed description block */
+.jd-tagdescr {
+	margin:.25em 0 .75em 0;
+	line-height:1em;
+}
+
+.jd-tagdescr p {
+	margin:.5em 0;
+	padding:0;
+}
+
+.jd-tagdescr ol, .jd-tagdescr ul {
+	margin:0 2.5em;
+	padding:0;
+}
+
+.jd-tagdescr table, .jd-tagdescr img {
+	margin:.25em 1em;
+}
+
+.jd-tagdescr li {
+	margin:0 0 .25em 0;
+	padding:0;
+}
+
+/* API reference: heading marking the details section for constants, attrs, methods, etc. */
+h4.jd-details-title {
+	font-size:1.15em;
+	background-color: #E2E2E2;
+	margin:1.5em 0 .6em;
+	padding:3px 95px 3px 3px; /* room for api-level */
+}
+
+h4.jd-tagtitle {
+	margin:0;
+}
+
+/* API reference: heading for "Parameters", "See Also", etc., in details sections */
+h5.jd-tagtitle {
+	margin:0 0 .25em 0;
+	font-size:1em;
+}
+
+.jd-tagtable {
+	margin:0;
+}
+
+.jd-tagtable td, .jd-tagtable th {
+	border:none;
+	background-color:#fff;
+	vertical-align:top;
+	font-weight:normal;
+	padding:2px 10px;
+}
+
+.jd-tagtable th {
+	font-style:italic;
+}
+
+.jd-content table h2 {
+	background-color: #d6d6d6;
+	font-size: 1.1em;
+	margin:0 0 10px;
+	padding:5px;
+	left:0;
+	width:auto;
+}
+
+div.design-announce {
+	border-top:1px solid #33B5E5;
+	border-bottom:1px solid #33B5E5;
+	padding:5px 10px 10px 55px;
+	margin:2em 0;
+	background:url('images/icon_design.png') 5px 13px no-repeat;
+}
+
+div.design-announce p {
+	margin: .5em 0 0 0;
+}
+
+div.special {
+	padding: .5em 1em 1em 1em;
+	margin: 0 0 1em;
+	background-color: #DAF3FC;
+	border:1px solid #d3ecf5;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+div.special p {
+	margin: .5em 0 0 0;
+}
+
+div.special ol {
+	margin: 0;
+}
+
+div.special ol li {
+	margin: 0;
+	padding: 0;
+}
+
+.jd-content div.special h2, .jd-content div.special h3 {
+	color:#669999;
+	font-size:1.2em;
+	border:none;
+	margin:0 0 .5em;
+	padding:0;
+}
+
+.jd-content div.special.reference h2, .jd-content div.special.reference h3, .jd-content div.special.reference h4 {
+	color:#000;
+	font-size:1em;
+	border:none;
+	font-weight:bold;
+	margin:.5em 0;
+	padding:0;
+}
+
+p.note, div.note, p.caution, div.caution, p.warning, div.warning {
+	margin-left: 1em;
+	padding: 0 0 0 .5em;
+	border-left: 4px solid;
+}
+
+p.special-note, div.special-note {
+	background-color:#EBF3DB;
+	padding:10px 20px;
+	margin:0 0 1em;
+}
+
+p.note, div.note {
+	border-color: #f80;
+}
+
+p.warning, div.warning {
+	border-color: #aa0033;
+}
+
+p.caution, div.caution {
+	border-color: #ffcf00;
+}
+
+li .note, li .caution, li .warning {
+	margin: .5em 0 0 0;
+	padding: .2em .5em .2em .9em;
+}
+
+/* Makes sure the first paragraph does not add top-whitespace within the box */
+li .note>p:first-child, li .caution>p:first-child, li .warning>p:first-child {
+	margin-top:0;
+	padding-top:0;
+}
+
+dl.xml dt {
+	font-variant:small-caps;
+	font-size:1.2em;
+}
+
+dl.xml dl {
+	padding:0;
+}
+
+dl.xml dl dt {
+	font-variant:normal;
+	font-size:1em;
+}
+
+.listhead li {
+	font-weight: bold;
+}
+
+.listhead li *, /*ie*/.listhead li li {
+	font-weight: normal;
+}
+
+ol.no-style, ul.no-style {
+	list-style:none;
+	padding-left:1em;
+}
+
+.new, .new-child {
+	font-size: .78em;
+	font-weight: bold;
+	color: #ff3d3d;
+	text-decoration: none;
+	vertical-align:top;
+	line-height:.9em;
+	white-space:nowrap;
+}
+
+.toggle-list.open .new-child {
+	display:none;
+}
+
+pre.classic {
+	background-color:transparent;
+	border:none;
+	padding:0;
+}
+
+p.img-caption {
+	margin: -0.5em 0 1em 1em; /* matches default img left-margin */
+}
+
+div.figure {
+	float:right;
+	clear:right;
+	margin:1em 0 0 0;
+	padding:0 0 0 3em;
+	background-color:#fff;
+	/* width must be defined w/ an inline style matching the image width */
+}
+
+.jd-content div.figure img {
+	margin: 0 0 1em;
+}
+
+div.figure p.img-caption {
+	margin: -0.5em 0 1em 0;
+}
+
+p.table-caption {
+	margin: 0 0 0.5em 1em; /* matches default table left-margin */
+}
+
+
+/* toggle for misc content (such as long sample code) 
+   see toggleContent() script in android-developer-docs.js */
+.toggle-content.closed .toggle-content-toggleme {
+	display:none;
+}
+
+.toggle-content a[href="#"] {
+	text-decoration:none;
+	color:inherit;
+}
+
+.toggle-content-toggleme {
+	padding-bottom:1px; /* fixes animation bounce due to margins */
+}
+
+.jd-content .toggle-content img.toggle-content-img {
+	margin:0;
+}
+
+/* JQUERY RESIZABLE STYLES */
+.ui-resizable { position: relative; }
+.ui-resizable-handle { position: absolute; display: none; font-size: 0.1px; z-index:1; }
+.ui-resizable .ui-resizable-handle { display: block; }
+body .ui-resizable-disabled .ui-resizable-handle { display: none; }
+body .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-s { height: 3px; width: 100%; bottom: 0px; left: 0px; background-color: #ccc; }
+.ui-resizable-e { width: 3px; right: 0px; top: 0px; height: 100%; background-color: #ccc; }
+
+
+/* ===== CORE ===== */
+
+/* RESET STYLES */
+
+html,body,div,h1,h2,h3,h4,h5,h6,p,img,
+dl,dt,dd,ol,ul,li,table,caption,tbody,
+tfoot,thead,tr,th,td,form,fieldset,
+embed,object,applet {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* BASICS */
+
+html, body {
+	overflow:hidden; /* keeps scrollbar off IE */
+	background-color:#fff;
+}
+
+body {
+	font-family:arial,sans-serif;
+	font-size:13px;
+	color:#333;
+	background-image:url(images/bg_fade.jpg);
+	background-repeat:repeat-x;
+}
+
+a, a code {
+	color:#006699;
+}
+
+a:active, a:active code {
+	color:#f00;
+} 
+
+a:visited, a:visited code {
+	color:#006699;
+}
+
+input, select, textarea, option, label {
+	font-family:inherit;
+	font-size:inherit;
+	padding:0;
+	margin:0;
+	vertical-align:middle;
+}
+
+option {
+  padding:0 4px;
+}
+
+p, form {
+	padding:0;
+	margin:0 0 1em;
+}
+
+code, pre {
+	color:#007000;
+	font-family:monospace;
+	line-height:1em;
+}
+
+var {
+	color:#007000;
+	font-style:italic;
+}
+
+pre {
+	border:1px solid #ccc;
+	background-color:#fafafa;
+	padding:10px;
+	margin:0 0 1em 1em;
+	overflow:auto;
+	line-height:inherit; /* fixes vertical scrolling in webkit */
+}
+
+h1,h2,h3,h4,h5 {
+	margin:1em 0;
+	padding:0;
+}
+
+p,ul,ol,dl,dd,dt,li {
+	line-height:1.3em;
+}
+
+ul,ol {
+	margin:0 0 .8em;
+	padding:0 0 0 2em;
+}
+
+li {
+	padding:0 0 .5em;
+}
+
+dl {
+	margin:0 0 1em 0;
+	padding:0;
+}
+
+dt {
+	margin:0;
+	padding:0;
+}
+
+dd {
+	margin:0 0 1em;
+	padding:0 0 0 2em;
+}
+
+li p {
+	margin:.5em 0 0;
+}
+
+dd p {
+	margin:1em 0 0;
+}
+
+li pre, li table, li img {
+	margin:.5em 0 0 1em;
+}
+
+dd pre, .jd-content dd table, .jd-content dd img {
+	margin:1em 0 0 1em;
+}
+
+li ul, li ol, dd ul, dd ol {
+	margin:0;
+	padding: 0 0 0 2em;
+}
+
+li li, dd li {
+	margin:0;
+	padding:.5em 0 0;
+}
+
+dl dl, ol dl, ul dl {
+	margin:0 0 1em;
+	padding:0;
+}
+
+table {
+	font-size:1em;
+	margin:0 0 1em;
+	padding:0;
+	border-collapse:collapse;
+	border-width:0;
+	empty-cells:show;
+}
+
+td, th {
+	border:1px solid #ccc;
+	padding:6px 12px;
+	text-align:left;
+	vertical-align:top;
+	background-color:inherit;
+}
+
+th {
+	background-color:#dee8f1;
+}
+
+td > p:last-child {
+	margin:0;
+}
+
+hr.blue {
+	background-color:#DDF0F2;
+	border:none;
+	height:5px;
+	margin:20px 0 10px;
+}
+
+/* LAYOUT */
+
+#body-content {
+	/* "Preliminary" watermark for preview releases and interim builds.
+	background:transparent url(images/preliminary.png) repeat scroll 0 0; */
+	margin:0;
+	position:relative;
+	width:100%;
+}
+
+#header {
+	height: 90px;
+	position:relative;
+	z-index:100;
+	min-width:675px; /* min width for the tabs, before they wrap */
+	padding:0 10px;
+	border-bottom:3px solid #f80;
+}
+
+#headerLeft {
+	padding: 20px 0 0;
+}
+
+#headerLeft img {
+	float: left;
+	height: 60px;
+	left: 70px;
+	position: absolute;
+}
+
+/* Tabs in the header */
+
+#header ul {
+	list-style: none;
+	margin: 41px 300px 0;
+	padding: 0;
+	height: 29px;
+}
+
+#header li {
+	float: left;
+	margin: 0px 2px 0px 0px;
+	padding:0;
+}
+
+#header li a {
+	text-decoration: none;
+	display: block;
+	background-color: #eee;
+	background-image: -moz-linear-gradient(top,#fff,#eee);
+	background-image: -webkit-linear-gradient(top,#fff,#eee);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr="#ffffff",endColorstr="#eeeeee");
+	border: 1px solid #fa0;
+	border-bottom: 0px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	color: #666;
+	font-size: 13px;
+	font-weight: bold;
+	width: 94px;
+	height: 29px;
+	text-align: center;
+	margin: -1px 0;
+}
+
+#header li a:hover {
+	background-color: #ddd;
+	background-image: -moz-linear-gradient(top,#fff,#ddd);
+	background-image: -webkit-linear-gradient(top,#fff,#ddd);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr="#ffffff",endColorstr="#dddddd");
+	border-color: #f80;
+}
+
+#header li a span {
+	position:relative;
+	top:7px;
+}
+
+#header li a span+span {
+	display:none;
+}
+
+/* tab highlighting */
+
+#header-tabs .current-tab a {
+	background-color: #fa0;
+	background-image: -moz-linear-gradient(top,#fb0,#f80);
+	background-image: -webkit-linear-gradient(top,#fb0,#f80);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr="#ffbb00 1%",endColorstr="#ff8800");
+	border-color: #f80;
+	color: #fff;
+	font-weight: bold;
+	cursor:default;
+}
+
+#header-tabs .current-tab a:hover {
+	background-color: #fa0;
+	background-image: -moz-linear-gradient(top,#fb0,#f80);
+	background-image: -webkit-linear-gradient(top,#fb0,#f80);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr="#ffbb00 1%",endColorstr="#ff8800");
+	border-color: #f80;
+}
+
+/* FOOTER */
+
+.footer {
+	width:90%;
+	padding: 20px;
+	color: #aaa;
+	font-size: 11px;
+}
+

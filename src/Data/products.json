@@ -1,0 +1,50 @@
+[
+  {
+    "prodId":0,
+    "productName": "25 - Adele",
+    "price": 10.00,
+    "productNote":"25 is the highly anticipated new album from Adele, and is her first new music since her Oscar winning single 'Skyfall' in 2012...",
+    "productDesc": "'25' is the highly anticipated new album from Adele, and is her first new music since her Oscar winning single Skyfall in 2012. Hello is the debut single from 25. The cinematic video for Hello was shot in the countryside surrounding Montreal and is directed by the celebrated young Canadian director Xavier Dolan (Mommy, Tom at the Farm).",
+    "productImg": "img/product-adele.jpg"
+  },
+  {
+    "prodId":1,
+    "productName": "THE BEST OF THE CUTTING EDGE 1965 - 1966: THE BOOTLEG SERIES VOL. 12 - BOB DYLAN",
+    "price": 14.00,
+    "productNote":"Between 1965 and 1966 Bob Dylan recorded three...",
+    "productDesc": "Between 1965 and 1966 Bob Dylan recorded three albums that many believe changed the course of modern music: Bringing It All back Home, Highway 61 Revisited and Blonde on Blonde.The Cutting Edge 1965-1966: The Bootleg Series Volume 12 takes you inside the studio during the recording of those three albums. With a staggering wealth of unreleased songs, outtakes, rehearsals and alternate versions - The Cutting Edge provides a unique insight into a legendary icon's creative process.1. 2-CD featuring the best of Bob Dylan's unreleased studio recordings from 1965 and 1966, Includes alternate versions of songs such as 'Like A Rolling Stone', 'Desolation Row', 'Visions Of Johanna' and 'Highway 61 Revisited'. Packaged with a 60-page booklet with exclusive photography and liner notes.",
+    "productImg": "img/product-bob.jpg"
+  },
+  {
+    "prodId":2,
+    "productName": "CINEMA - ANDREA BOCELLI",
+    "price": 12.00,
+    "productNote":"International superstar Andrea Bocelli returns with his new eagerly awaited album Cinema. Cinema celebrates the greatest ...",
+    "productDesc": "International superstar Andrea Bocelli returns with his new eagerly awaited album Cinema. Cinema celebrates the greatest movie songs of all time and reunites a team of musical legends including David Foster, Humberto Gatica and Tony Renis who worked together on the trailblazing success of Bocellis Amore. Cinema marks Bocellis first new studio recording in two years and will be released globally on October 23 on Verve.",
+    "productImg": "img/product-andrea.jpg"
+  },
+  {
+    "prodId":3,
+    "productName": "Storyteller - Carrie Underwood",
+    "price": 12.00,
+    "productNote":"Carrie Underwoods fifth studio album and her first since almost three-and-a-half years...",
+    "productDesc": "Carrie Underwoods fifth studio album and her first since almost three-and-a-half years, produced by Mark Bright and Jay Joyce, whi also is responible for acts like Little Big Town and Eric Church!.",
+    "productImg": "img/product-carrie.jpg"
+  },
+  {
+    "prodId":4,
+    "productName": "If I Can Dream - Elvis Presley with the Royal Philharmonic Orchestra",
+    "price": 15.00,
+    "productNote":"An exciting revisit of Elvis' work, If I Can Dream focuses on the iconic...",
+    "productDesc": "An exciting revisit of Elvis' work, If I Can Dream focuses on the iconic artist's unmistakable voice, emphasizing the pure power of The King of Rock and Roll. This remarkable new album features classic Elvis vocal performances with brand-new orchestral accompaniment, along with a duet with Michael Bublé, and appearances by Il Volo and Duane Eddy.Recorded at Abbey Road Studios in London with acclaimed producers Don Reedman and Nick Patrick, the 14-track album features Elvis' most dramatic original performances augmented with lush new arrangements by The Royal Philharmonic Orchestra. This would be a dream come true for Elvis, Priscilla Presley says of the project.",
+    "productImg": "img/product-elvis.jpg"
+  },
+  {
+    "prodId":5,
+    "productName": "Frozen CD - Disney Karaoke Series",
+    "price": 8.00,
+    "productNote":"The wait is finally over! The brand new Disney Karaoke Series: FROZEN CD is here! Sing along...",
+    "productDesc": "The wait is finally over! The brand new Disney Karaoke Series: FROZEN CD is here! Sing along to your favorite songs from the Academy Awards winner - Best Animated Feature FROZEN. The CD features eight instrumental plus eight vocal tracks, including 'Let it Go,' winner of Academy Awards - Best Original Song, our favorite duet 'Love is an Open Door,' and Olaf's big winter hit 'In Summer'!",
+    "productImg": "img/product-frozen.jpg"
+  }
+]
