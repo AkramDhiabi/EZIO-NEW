@@ -12,6 +12,7 @@ phases:
       - npm run build
   post_build:
     commands:
+      - zip -qr dist.zip dist/
       - echo Build completed on `date`
 # Include only the files required for your application to run.
 artifacts:
